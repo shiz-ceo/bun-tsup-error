@@ -1,9 +1,13 @@
 {
-  "name": "test",
+  "name": "@venloc-tech/test-typilities",
   "module": "index.ts",
   "type": "module",
-  "private": true,
+  "version": "0.0.3",
+  "types": "./dist/index.d.ts",
   "exports": {
+    ".": {
+      "types": "./dist/index.d.ts"
+    },
     "./brand": {
       "types": "./dist/brand/index.d.ts"
     },
@@ -14,6 +18,11 @@
       "types": "./dist/resolve/index.d.ts"
     }
   },
+  "files": [
+    "dist/**",
+    "package.json",
+    "README.md"
+  ],
   "devDependencies": {
     "@types/bun": "latest",
     "tsup": "^8.4.0"
